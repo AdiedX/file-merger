@@ -107,7 +107,7 @@ public class MergeFilesService {
       e.printStackTrace();
     }
 
-    return areContentsEqual(INPUT_DIR + trimmedInputFileName, INPUT_DIR + sortedOutputFileName);
+    return areContentsEqual(getPath(INPUT_DIR, trimmedInputFileName), getPath(INPUT_DIR, sortedOutputFileName));
   }
 
   private void merge(List<String> filePaths, String mergedFilePath) throws IOException {
