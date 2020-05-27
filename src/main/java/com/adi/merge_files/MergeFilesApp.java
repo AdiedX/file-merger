@@ -1,4 +1,4 @@
-package com.adi.merge_files;
+package main.java.com.adi.merge_files;
 
 import com.adi.merge_files.service.MergeFilesService;
 import picocli.CommandLine;
@@ -13,7 +13,6 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class MergeFilesApp {
-  @Inject
   private MergeFilesService mergeFilesService;
 
   public static void main(String... args) {
